@@ -6,7 +6,7 @@ local uA:string;
 	if(hlist[2]$name=="USER-AGENT")
 	{
 		uA=hlist[2]$value;
-		if(c$id$orig_h in iptAg)
+		if(c$id$orig_h in IPtable)
 		{
 			x=iptAg[c$id$orig_h];
 			add x[uA];
