@@ -8,14 +8,14 @@ local uA:string;
 		uA=hlist[2]$value;
 		if(c$id$orig_h in IPtable)
 		{
-			x=iptAg[c$id$orig_h];
+			x=IPtable[c$id$orig_h];
 			add x[uA];
-			iptAg[c$id$orig_h]=x;
+			IPtable[c$id$orig_h]=x;
 		}
     else
 		{
 			add x[uA];
-			iptAg[c$id$orig_h]=x;
+			IPtable[c$id$orig_h]=x;
 		}
 	}
 }
