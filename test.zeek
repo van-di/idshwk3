@@ -19,8 +19,6 @@ event zeek_done()
         for(x in IPtable)
 	{
 		if(|IPtable[x]|>=3)
-		{
 		print fmt("%s is a proxy",x);
-		}
 	}
 }
