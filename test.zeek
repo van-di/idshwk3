@@ -1,5 +1,5 @@
 global IPtable :table[addr] of set[string] ;
-event http_all_headers(c: connection, is_orig: bool, name: string, value: string)
+event http_header(c: connection, is_orig: bool, name: string, value: string)
 {
 if (to_lower(name)=="user-agent")
 	{
